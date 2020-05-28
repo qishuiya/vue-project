@@ -1,17 +1,17 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="HomePage">
+    跳转页面
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'HomePage',
 }
 </script>
 
 <style>
-#app {
+#HomePage {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
