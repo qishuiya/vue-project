@@ -25,7 +25,7 @@ let routes = [
   {
     path: '/404',
     name: '404',
-    component: '404'
+    component: 'NotFound'
   },
   // {
   //   component: 'shop/goods/list'

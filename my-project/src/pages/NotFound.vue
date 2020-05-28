@@ -1,17 +1,17 @@
 <template>
-  <div id="404">
-    跳转页面
+  <div id="NotFound">
+    404
   </div>
 </template>
 
 <script>
 export default {
-  name: '404',
+  name: 'NotFound',
 }
 </script>
 
 <style>
-#404 {
+#NotFound {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
