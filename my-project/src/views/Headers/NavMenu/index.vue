@@ -5,8 +5,6 @@
              class="el-menu-demo"
              mode="horizontal"
              @select="handleSelect"
-             background-color="#545c64"
-             text-color="#fff"
              active-text-color="#ffd04b">
       <el-menu-item index="newInfo">最新资讯</el-menu-item>
       <el-menu-item index="forumCentre">论坛中心</el-menu-item>
@@ -26,7 +24,7 @@ export default {
     };
   },
   methods: {
-    handleSelect (key, keyPath) {
+    handleSelect (key) {
       this.$router.push(`/${key}`)
     },
   }

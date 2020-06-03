@@ -2,7 +2,9 @@
   <div id="Headers"
        class="goldfish-headers">
     <div class="goldfish-headers-left">
-      <span class="goldfish-headers-log">logo</span>
+      <img class="goldfish-headers-log"
+           src="../../assets/images/logo.jpg"
+           alt="">
       <nav-menu />
     </div>
     <user-detail />
@@ -25,11 +27,14 @@ export default {
 
 <style scoped>
 .goldfish-headers {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background: #545c64;
+  box-shadow: 0px -33px 60px 2px;
 }
 .goldfish-headers-left {
   display: flex;
@@ -40,8 +45,5 @@ export default {
   display: inline-block;
   width: 150px;
   height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: cornflowerblue;
 }
 </style>
