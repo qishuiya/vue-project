@@ -12,9 +12,9 @@
         <el-dropdown-item>账号设置</el-dropdown-item>
         <el-dropdown-item divided>帮助</el-dropdown-item>
         <el-dropdown-item>
-          <span @click="handlerLogin('/user/login')">
+          <router-link to="/user/login">
             退出登陆
-          </span>
+          </router-link>
         </el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>

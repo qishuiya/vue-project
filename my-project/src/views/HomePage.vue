@@ -6,8 +6,6 @@
       </el-header>
       <el-main>Main</el-main>
     </el-container>
-    <!-- 顶部导航组件 -->
-
   </div>
 </template>
 
