@@ -13,14 +13,31 @@ let routes = [
     // component: () => import('@/views/layout.vue'), 对公共的名字进行提取
     component: 'HomePage',
     // 对子组件重定向
-    // redirect: {
-    //   name: 'index'
-    // },
-    // children: [{
-    //   // path: '/index',
-    //   // name: 'index',
-    //   // component: 'index/index',
-    // }]
+    redirect: {
+      path: '/newInfo',
+    },
+    children: [
+      {
+        path: '/newInfo',
+        name: '最新资讯',
+        component: 'Main/NewInfo/index',
+      },
+      {
+        path: '/forumCentre',
+        name: '论坛中心',
+        component: 'Main/ForumCentre/index',
+      },
+      {
+        path: '/taskCentre',
+        name: '任务中心',
+        component: 'Main/TaskCentre/index',
+      },
+      {
+        path: '/personalProfile',
+        name: '个人展示',
+        component: 'Main/PersonalProfile/index',
+      },
+    ]
   },
   {
     path: '/user',
@@ -44,16 +61,14 @@ let routes = [
     name: '404',
     component: 'NotFound'
   },
-  // {
-  //   component: 'shop/goods/list'
-  // },
   // 对没有的地址跳入以下页面
-  // {
-  //   path: '*',
-  //   redirect: {
-  //     name: 'index'
-  //   }
-  // },
+  {
+    path: '*',
+    redirect: {
+      path: '/404',
+      name: '404'
+    }
+  },
 
 ]
 // 获取路由方法
