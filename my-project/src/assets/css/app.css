@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*滚动条整体样式*/
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/*滚动条滑块*/
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgb(133, 133, 127);
+}
+
+/*滚动条轨道*/
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background: rgb(226, 226, 223);
+}
+
+/* 结果页-状态页-loading页 公共样式 */
+.goldfish-result {
+	width: 100%;
+	height: 100vh;
+}

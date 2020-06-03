@@ -23,6 +23,23 @@ let routes = [
     // }]
   },
   {
+    path: '/user',
+    name: '用户',
+    component: 'User/index',
+    children: [
+      {
+        path: '/user/login',
+        name: '登陆',
+        component: 'User/Login/index',
+      },
+      {
+        path: '/user/logon',
+        name: '注册',
+        component: 'User/Logon/index',
+      }
+    ]
+  },
+  {
     path: '/404',
     name: '404',
     component: 'NotFound'
@@ -57,7 +74,7 @@ function createRoute (arr) {
     // 生成path
     arr[i].path = arr[i].path || `/${val}`
     // 有的话自动生成component,把传入上面手写的路由放进来
-    let componetFun = import(`@/pages/${arr[i].component}.vue`)
+    let componetFun = import(`@/views/${arr[i].component}.vue`)
     arr[i].component = () => componetFun;
     // 判断有没有子路由,如果有的话就再运行createRoute这个方法也就是递归
     if (arr[i].children && arr[i].children.length > 0) {
