@@ -23,8 +23,7 @@ export default {
 </script>
 
 <style>
-.el-header,
-.el-main {
+.el-header {
   padding: 0;
 }
 </style>

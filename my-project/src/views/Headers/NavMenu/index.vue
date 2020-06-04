@@ -23,6 +23,13 @@ export default {
       activeIndex2: 'newInfo'
     };
   },
+  mounted () {
+    // 获取当前路由值 
+    const currentURL = this.$route.path;
+    const navKey = currentURL.replace('/', '');
+    // 改变导航菜单的key
+    this.activeIndex2 = navKey;
+  },
   methods: {
     handleSelect (key) {
       this.$router.push(`/${key}`)

@@ -30,11 +30,12 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  box-shadow: 0px -33px 60px 2px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 .goldfish-headers-left {
   display: flex;
