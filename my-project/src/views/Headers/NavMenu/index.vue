@@ -39,4 +39,7 @@ export default {
 </script>
 
 <style scoped>
+.el-menu.el-menu--horizontal {
+  border-bottom: none;
+}
 </style>
